@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+work_dirs/
+data/
+*.pth
+*.pt
+*.log
