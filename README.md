@@ -39,8 +39,7 @@ ensures highly robust phase unwrapping, intrinsically eliminating the need for
 heuristic truncations while achieving strict boundary continuity and superior
 noise immunity. Extensive experiments across three large-scale datasets
 demonstrate that FSC achieves highly competitive overall performance, yielding
-substantial improvements in high-precision detection. The code is available at
-[https://github.com/weiminghong/FSC](https://github.com/weiminghong/FSC).
+substantial improvements in high-precision detection.
 
 ## Method
 
