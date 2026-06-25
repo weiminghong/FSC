@@ -19,13 +19,28 @@ project assets for reproducible oriented object detection experiments.
 
 ## Abstract
 
-Angle boundary discontinuity is a fundamental difficulty in oriented object
-detection. Directly regressing a wrapped angle can make nearby boxes appear far
-apart numerically, while rotational symmetry can map different angle labels to
-the same physical object geometry. FSC addresses this issue by encoding the
-angle with a compact Fourier-series representation and optimizing it through a
-decoupled angle branch. The representation keeps the periodic angular geometry
-continuous and uses a manifold constraint to stabilize noisy predictions.
+With the rapid advancement of intelligent driving and remote sensing, oriented
+object detection has gained widespread attention. However, achieving
+high-precision performance is fundamentally constrained by the Angle Boundary
+Discontinuity (ABD) and Cyclic Ambiguity (CA) problems, which typically cause
+significant angle fluctuations near periodic boundaries. Although recent studies
+propose continuous angle coders to alleviate these issues, our theoretical and
+empirical analyses reveal that state-of-the-art methods still suffer from
+substantial cyclic errors. We attribute this instability to the structural noise
+amplification within their non-orthogonal decoding mechanisms. This mathematical
+vulnerability significantly exacerbates angular deviations, particularly for
+square-like objects. To resolve this fundamentally, we propose the Fourier
+Series Coder (FSC), a lightweight plug-and-play component that establishes a
+continuous, reversible, and mathematically robust angle encoding-decoding
+paradigm. By rigorously mapping angles onto a minimal orthogonal Fourier basis
+and explicitly enforcing a geometric manifold constraint, FSC effectively
+prevents feature modulus collapse. This structurally stabilized representation
+ensures highly robust phase unwrapping, intrinsically eliminating the need for
+heuristic truncations while achieving strict boundary continuity and superior
+noise immunity. Extensive experiments across three large-scale datasets
+demonstrate that FSC achieves highly competitive overall performance, yielding
+substantial improvements in high-precision detection. The code is available at
+[https://github.com/weiminghong/FSC](https://github.com/weiminghong/FSC).
 
 ## Method
 
