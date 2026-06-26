@@ -15,7 +15,8 @@ project assets for reproducible oriented object detection experiments.
 
 - **2026-06-25**: Released the MMRotate-based FSC codebase with the core method
   implementation and a DOTA training configuration.
-- FSC weights for **HRSC-2016** and **DOTA-v1.0** will be released soon.
+- FSC weights for **HRSC-2016** are released. DOTA-v1.0 weights will be
+  released soon.
 
 ## Abstract
 
