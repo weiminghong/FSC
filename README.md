@@ -129,7 +129,7 @@ pipeline after inference.
 | Method | Backbone | Dataset | Config | Weights |
 | --- | --- | --- | --- | --- |
 | FSC-RetinaNet | R-50-FPN | DOTA-v1.0 | `configs/fsc-retinanet-r50_fpn_3x_dota.py` | Coming soon |
-| FSC-RetinaNet | R-50-FPN | HRSC-2016 | Coming soon | Coming soon |
+| FSC-RetinaNet | R-50-FPN | HRSC-2016 | Coming soon | [Download](weights/rotated-retinanet-rbox-le90_r50_fpn_psc_rr-6x_hrsc-d2e78a2d.pth) |
 
 ## Code Scope
 
